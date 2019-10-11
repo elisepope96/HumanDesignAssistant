@@ -1,0 +1,6 @@
+framework module Pods_Human_Design_Assistant {
+  umbrella header "Pods-Human Design Assistant-umbrella.h"
+
+  export *
+  module * { export * }
+}
