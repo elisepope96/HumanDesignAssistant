@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C576A12BF8B61F7F1C1FFA0E /* Pods_Human_Design_Assistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F856EFD22E81AA3842C381DB /* Pods_Human_Design_Assistant.framework */; };
+		ED2B9259236B968C002A3F8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B9258236B968C002A3F8F /* LoginViewController.swift */; };
 		ED5BA44D234FB1680087C8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5BA44C234FB1680087C8E5 /* AppDelegate.swift */; };
 		ED5BA44F234FB1680087C8E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5BA44E234FB1680087C8E5 /* SceneDelegate.swift */; };
 		ED5BA451234FB1680087C8E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5BA450234FB1680087C8E5 /* ViewController.swift */; };
@@ -16,7 +17,7 @@
 		ED5BA459234FB1730087C8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5BA458234FB1730087C8E5 /* Assets.xcassets */; };
 		ED5BA45C234FB1730087C8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5BA45A234FB1730087C8E5 /* LaunchScreen.storyboard */; };
 		ED5BA464234FB1DB0087C8E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED5BA463234FB1DB0087C8E5 /* GoogleService-Info.plist */; };
-		ED9E2487234FB8E70027E7CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E2486234FB8E70027E7CB /* LoginViewController.swift */; };
+		ED9E2487234FB8E70027E7CB /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E2486234FB8E70027E7CB /* OpeningViewController.swift */; };
 		ED9E2489234FB9100027E7CB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E2488234FB9100027E7CB /* ForgotPasswordViewController.swift */; };
 		ED9E248B234FB9200027E7CB /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E248A234FB9200027E7CB /* CreateAccountViewController.swift */; };
 		ED9E248F234FDEC40027E7CB /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E248E234FDEC40027E7CB /* MainScreenViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		3720630ECBFB6B72175483A5 /* Pods-Human Design Assistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Human Design Assistant.release.xcconfig"; path = "Target Support Files/Pods-Human Design Assistant/Pods-Human Design Assistant.release.xcconfig"; sourceTree = "<group>"; };
 		43F6E5C9CF1A57032BF8118D /* Pods-Human Design Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Human Design Assistant.debug.xcconfig"; path = "Target Support Files/Pods-Human Design Assistant/Pods-Human Design Assistant.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2B9258236B968C002A3F8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED5BA449234FB1680087C8E5 /* Human Design Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Human Design Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5BA44C234FB1680087C8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5BA44E234FB1680087C8E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +37,7 @@
 		ED5BA45B234FB1730087C8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5BA45D234FB1730087C8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED5BA463234FB1DB0087C8E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		ED9E2486234FB8E70027E7CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED9E2486234FB8E70027E7CB /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
 		ED9E2488234FB9100027E7CB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		ED9E248A234FB9200027E7CB /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		ED9E248E234FDEC40027E7CB /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +112,8 @@
 		ED9E248D234FB9400027E7CB /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				ED9E2486234FB8E70027E7CB /* LoginViewController.swift */,
+				ED9E2486234FB8E70027E7CB /* OpeningViewController.swift */,
+				ED2B9258236B968C002A3F8F /* LoginViewController.swift */,
 				ED9E2488234FB9100027E7CB /* ForgotPasswordViewController.swift */,
 				ED9E248A234FB9200027E7CB /* CreateAccountViewController.swift */,
 			);
@@ -233,13 +236,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2B9259236B968C002A3F8F /* LoginViewController.swift in Sources */,
 				ED9E248B234FB9200027E7CB /* CreateAccountViewController.swift in Sources */,
 				ED5BA451234FB1680087C8E5 /* ViewController.swift in Sources */,
 				ED5BA44D234FB1680087C8E5 /* AppDelegate.swift in Sources */,
 				ED9E2489234FB9100027E7CB /* ForgotPasswordViewController.swift in Sources */,
 				ED5BA457234FB1680087C8E5 /* Human_Design_Assistant.xcdatamodeld in Sources */,
 				ED9E248F234FDEC40027E7CB /* MainScreenViewController.swift in Sources */,
-				ED9E2487234FB8E70027E7CB /* LoginViewController.swift in Sources */,
+				ED9E2487234FB8E70027E7CB /* OpeningViewController.swift in Sources */,
 				ED5BA44F234FB1680087C8E5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

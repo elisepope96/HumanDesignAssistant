@@ -2,45 +2,51 @@
 //  LoginViewController.swift
 //  Human Design Assistant
 //
-//  Created by Elise Pope on 10/10/19.
+//  Created by Elise Pope on 10/31/19.
 //  Copyright © 2019 Quantum Alignment System, LLC. All rights reserved.
 //
 
 import UIKit
 import FirebaseAuth
 
-class LoginViewController: UIViewController{
+class LoginViewController: UIViewController {
 
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var password: UITextField!
-    let segueIdentifier = "LoginToMainSegueIdentifier"
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorMessageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorMessageLabel.alpha = 0
         // Do any additional setup after loading the view.
     }
-    @IBAction func LoginButtonPressed(_ sender: UIButton) {
+    
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        
+        let error = validateFields()
+        if error != nil{
+            //was an error
+            showError(error!)
+        }
+        let email = self.emailTextField!.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = self.passwordTextField!.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
         guard
-            let email = email.text,
-            let password = password.text,
             email.count > 0,
             password.count > 0
             else {
+                errorMessageLabel.text = "Please enter a username and password"
+                errorMessageLabel.alpha = 1
                 return
         }
+        
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             if error == nil{
               guard let strongSelf = self else { return }
-                self!.performSegue(withIdentifier: self!.segueIdentifier, sender: self)
+                self!.transitionToHome()
             }
             else {
-                //Tells the user that there is an error and then gets firebase to tell them the error
-                let alert = UIAlertController(title: "Sign In Failed",
-                    message: error?.localizedDescription,
-                    preferredStyle: .alert)
-
-                alert.addAction(UIAlertAction(title: "OK", style: .default))
-
-                self!.present(alert, animated: true, completion: nil)
+                self!.showError(error!.localizedDescription)
+                
             }
         }
     }
@@ -56,20 +62,29 @@ class LoginViewController: UIViewController{
     
     override func viewDidDisappear(_ animated: Bool) {
         // Clean up fields
-        email.text = nil
-        password.text = nil
+        emailTextField.text = nil
+        passwordTextField.text = nil
     }
     
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func validateFields() -> String?{
+        if emailTextField!.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField!.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in all fields"
+        }
+        
+        //add password validation
+        return nil
+        
     }
-    */
-
+    
+    func transitionToHome() {
+           let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC")
+           view.window?.rootViewController = homeViewController
+           view.window?.makeKeyAndVisible()
+       }
+    
+    func showError(_ message: String){
+        errorMessageLabel.text = message
+        errorMessageLabel.alpha = 1
+    }
 }
