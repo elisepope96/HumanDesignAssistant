@@ -11,10 +11,12 @@ import FirebaseAuth
 
 class ForgotPasswordViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var errorMessageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        errorMessageLabel.alpha = 0
     }
     
     func textFieldShouldReturn(textField:UITextField) -> Bool {
@@ -26,15 +28,23 @@ class ForgotPasswordViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func sendEmailButtonPressed(_ sender: UIButton) {
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard
+            email.count > 0
+        else{
+            showError("Please enter an email")
+            return
+        }
+        Auth.auth().sendPasswordReset(withEmail: email) { (err) in
+            if err != nil{ self.showError(err!.localizedDescription)
+            }
+        }
     }
-    */
+    
+    func showError(_ message: String){
+        errorMessageLabel.text = message
+        errorMessageLabel.alpha = 1
+    }
 
 }

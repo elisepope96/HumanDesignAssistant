@@ -71,33 +71,151 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="73.660714285714278"/>
         </scene>
-        <!--Main Screen View Controller-->
-        <scene sceneID="wMt-IP-i2C">
+        <!--Monthly update-->
+        <scene sceneID="O12-Gn-0ot">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="aBU-Op-1ne" customClass="MainScreenViewController" customModule="Human_Design_Assistant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="o6W-dI-bR1">
+                <viewController id="CfA-YJ-aJv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xYh-Lg-Uyb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully signed in!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLM-cg-lGp">
-                                <rect key="frame" x="93" y="437.5" width="228" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monthly update" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDl-Pv-OPB">
+                                <rect key="frame" x="147" y="438" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="jLM-cg-lGp" firstAttribute="centerY" secondItem="o6W-dI-bR1" secondAttribute="centerY" id="AyT-YK-yRu"/>
-                            <constraint firstItem="jLM-cg-lGp" firstAttribute="centerX" secondItem="o6W-dI-bR1" secondAttribute="centerX" id="F1l-NQ-WTW"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="fuw-rH-iaz"/>
+                        <viewLayoutGuide key="safeArea" id="CuW-b5-6B0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LoW-OV-7Vx"/>
+                    <tabBarItem key="tabBarItem" title="Monthly update" image="calendar" catalog="system" landscapeImage="calendar" largeContentSizeImage="calendar" selectedImage="calendar" id="rlM-Dw-89A"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OF5-RJ-hQ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="862-F4-BXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2079.7101449275365" y="73.660714285714278"/>
+            <point key="canvasLocation" x="4069.5652173913045" y="-236.38392857142856"/>
+        </scene>
+        <!--Weekly Update-->
+        <scene sceneID="H34-Tv-4wT">
+            <objects>
+                <viewController id="buf-jP-kEX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="prr-wi-adU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weekly update" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPl-DW-btX">
+                                <rect key="frame" x="150" y="438" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BZ6-jr-Xkc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Weekly Update" image="calendar" catalog="system" landscapeImage="calendar" largeContentSizeImage="calendar" selectedImage="calendar" id="fP2-sn-H2P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbm-qE-pbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3374" y="413"/>
+        </scene>
+        <!--Meet Karen-->
+        <scene sceneID="iZt-Q0-8pa">
+            <objects>
+                <viewController id="59b-CR-kdc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Rr-5D-lPd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meet Karen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvm-Ns-RmW">
+                                <rect key="frame" x="163" y="438" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YlF-ai-tgg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Meet Karen" image="person" catalog="system" landscapeImage="person" largeContentSizeImage="person" selectedImage="person" id="JIe-2n-V9H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrV-va-0dP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4070" y="413"/>
+        </scene>
+        <!--Shop-->
+        <scene sceneID="h1k-kR-Q0E">
+            <objects>
+                <viewController id="LFb-fG-Qlq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0xw-he-4eU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWK-rr-0CJ">
+                                <rect key="frame" x="186" y="438" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lw7-4U-gHV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shop" image="cart" catalog="system" id="02d-Ud-d3P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ays-Zu-qc8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4732" y="140"/>
+        </scene>
+        <!--6 Day Update-->
+        <scene sceneID="vwu-TW-JAO">
+            <objects>
+                <viewController id="xVT-hP-Zce" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aOy-0m-aYH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 day update" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3H-cx-l4u">
+                                <rect key="frame" x="157" y="438" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ub0-E1-tM2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="6 Day Update" image="calendar" catalog="system" landscapeImage="calendar" largeContentSizeImage="calendar" selectedImage="calendar" id="3RP-Br-B0e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8CJ-2s-9tk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3374" y="-236"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="01O-Hp-CwR">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeTabBarController" id="OX7-k8-nKW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="70D-u1-Y0M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xVT-hP-Zce" kind="relationship" relationship="viewControllers" id="fj6-oy-MLj"/>
+                        <segue destination="buf-jP-kEX" kind="relationship" relationship="viewControllers" id="b8s-pD-PPQ"/>
+                        <segue destination="CfA-YJ-aJv" kind="relationship" relationship="viewControllers" id="HF4-1U-nSZ"/>
+                        <segue destination="59b-CR-kdc" kind="relationship" relationship="viewControllers" id="ze5-mF-YUZ"/>
+                        <segue destination="LFb-fG-Qlq" kind="relationship" relationship="viewControllers" id="SSF-nQ-y5E"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZP-cm-khd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2233" y="74"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="AKV-jf-owR">
@@ -134,6 +252,9 @@
                                             <constraint firstAttribute="height" constant="50" id="pGe-tQ-yPe"/>
                                         </constraints>
                                         <state key="normal" title="Send email"/>
+                                        <connections>
+                                            <action selector="sendEmailButtonPressed:" destination="o3Q-Bm-z6w" eventType="touchUpInside" id="zbn-7W-YTg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -166,6 +287,10 @@
                         <viewLayoutGuide key="safeArea" id="pio-cY-4Mz"/>
                     </view>
                     <navigationItem key="navigationItem" id="mWb-Uq-nFR"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Pru-bb-qqi" id="aBf-V1-HVj"/>
+                        <outlet property="errorMessageLabel" destination="IKh-xL-Ju2" id="OCN-g5-moB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dh2-d0-jSg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -365,6 +490,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="cart" catalog="system" width="64" height="50"/>
         <image name="humanDesign2" width="557" height="553"/>
+        <image name="person" catalog="system" width="64" height="58"/>
     </resources>
 </document>
